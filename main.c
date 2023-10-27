@@ -125,11 +125,10 @@ int main(void)
 	  BSP_ACCELERO_AccGetXYZ(A);
 	  BSP_GYRO_GetXYZ(G);
 
-	  /* to set the accelero sensitivity, go to stm32l475e_iot01_accelero.c line 68 and set 2,4,8,16 g (and
-	   * modify the #defines properly?);
+	  /* to set the accelero sensitivity, go to stm32l475e_iot01_accelero.c line 68 and set 2,4,8,16 g;
 	   *
 	   * to set the gyro sensitivity, go to stm32l475e_iot01_gyro.c line 74 and set 245, 500, 1000, 2000
-	   * mdps (and modify the #defines properly?) */
+	   * mdps*/
 
 	  /* scale multiplier and division by 1000 to get the G-format, same with gyro, add pow2 to norms:
 	   * (maybe useless, lsm6dsl.c already sets sensitivity levels)*/
